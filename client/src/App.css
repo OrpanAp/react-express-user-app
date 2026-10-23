@@ -1,0 +1,284 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.auth-card,
+.dashboard-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  background: #fff;
+  border: 1px solid #e3e7ef;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(23, 32, 51, 0.07);
+}
+
+.eyebrow {
+  color: #5268d8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(26px, 5vw, 34px);
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  color: #687386;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+form {
+  display: grid;
+  gap: 18px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+}
+
+input:focus {
+  border-color: #5268d8;
+  box-shadow: 0 0 0 3px rgba(82, 104, 216, 0.12);
+}
+
+button[type="submit"],
+.dashboard-card > button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 16px;
+  margin-top: 4px;
+  color: #fff;
+  background: #4056c7;
+  font-weight: 700;
+}
+
+button[type="submit"]:hover,
+.dashboard-card > button:hover {
+  background: #3044ad;
+}
+
+.switch-mode {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #687386;
+}
+
+.text-button {
+  border: 0;
+  padding: 0;
+  color: #4056c7;
+  background: transparent;
+  font-weight: 700;
+}
+
+.feedback {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: #b42318;
+}
+
+.success {
+  color: #18794e;
+}
+
+.user-details {
+  margin: 24px 0;
+  border-top: 1px solid #e3e7ef;
+}
+
+.user-details p {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 0;
+  margin: 0;
+  border-bottom: 1px solid #e3e7ef;
+  overflow-wrap: anywhere;
+}
+
+.user-details strong {
+  font-size: 12px;
+  color: #687386;
+}
+
+.dashboard-layout {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.dashboard-layout .dashboard-card {
+  max-width: none;
+}
+
+.users-section {
+  min-width: 0;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e3e7ef;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(23, 32, 51, 0.05);
+}
+
+.users-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.users-heading h2 {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.users-heading .subtitle {
+  margin: 0;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e3e7ef;
+  vertical-align: middle;
+}
+
+.users-table th {
+  color: #687386;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-label {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #eef0ff;
+  color: #4056c7;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.table-actions,
+.edit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.secondary-button,
+.danger-button {
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.secondary-button {
+  color: #344054;
+  background: #fff;
+  border: 1px solid #d8deea;
+}
+
+.danger-button {
+  color: #b42318;
+  background: #fff;
+  border: 1px solid #f0b8b4;
+}
+
+.edit-form {
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #f8f9fc;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+}
+
+.edit-form h3 {
+  margin-top: 0;
+}
+
+.edit-actions {
+  margin-top: 18px;
+}
+
+.edit-actions button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d8deea;
+}
+
+.edit-actions button[type="submit"] {
+  color: #fff;
+  background: #4056c7;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .auth-card,
+  .dashboard-card {
+    padding: 26px 20px;
+  }
+}
+
+@media (min-width: 850px) {
+  .dashboard-layout {
+    grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.7fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .users-section {
+    padding: 18px 12px;
+  }
+
+  .users-heading {
+    flex-direction: column;
+  }
+}

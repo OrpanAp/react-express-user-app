@@ -1,0 +1,18 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Test cookies and local data
+cookies.txt
+
+# Build output
+dist/
+client/dist/
+
+# Logs
+*.log
