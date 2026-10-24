@@ -167,9 +167,15 @@ CREATE TABLE IF NOT EXISTS users (
 
 The session store is configured to create its own session table. Make sure the configured MySQL account has permission to create and manage that table.
 
-### 3. Configure the backend environment
+### 3. Configure the  environment
 
-Create `server/.env` locally. Do not commit this file.
+## Forntend: Create `client/.env` locally. Do not commit this file.
+
+```dotenv
+VITE_API_URL=http://localhost:3000/api
+```
+
+## Backend: Create `server/.env` locally. Do not commit this file.
 
 ```dotenv
 PORT=3000
