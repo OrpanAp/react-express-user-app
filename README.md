@@ -18,6 +18,21 @@
   <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </p>
 
+## Contents
+
+- [Overview](#overview)
+- [Application screenshots](#application-screenshots)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Architecture](#architecture)
+- [Getting started](#getting-started)
+- [API overview](#api-overview)
+- [Security notes](#security-notes)
+- [Development scripts](#development-scripts)
+- [Roadmap](#roadmap)
+- [Author](#author)
+
+
 ---
 
 ## Overview
@@ -26,7 +41,7 @@
 
 The project focuses on practical backend fundamentals: password hashing, server-side sessions stored in MySQL, protected API routes, role checks against current database records, CSRF token validation, and parameterized database queries.
 
-> **Project status:** Personal learning project. Run it locally and configure your own database and credentials before use. It is not presented as a production-audited service.
+> **Project status:** Portfolio and learning project. The application demonstrates practical full-stack development and security patterns; it has not undergone an independent production security audit.
 
 ## Application screenshots
 
@@ -47,7 +62,7 @@ The following screenshots show the application's actual interface.
   </tr>
 </table>
 
-> **Screenshot safety:** Use test accounts when capturing or sharing screenshots. Never include passwords, session cookies, private user information, or secret configuration values.
+<p align="center"><sub>Interface previews from the project. Demonstration environments should use non-sensitive test data.</sub></p>
 
 ## Features
 
@@ -176,7 +191,7 @@ Generate a strong session secret locally, for example:
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
 
-Copy the generated value into your local `server/.env`. Never publish it or paste it into an issue, screenshot, or chat.
+Store the generated value only in your local environment configuration and keep it private. Use a different secret for each environment.
 
 ### 4. Install dependencies
 
