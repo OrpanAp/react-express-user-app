@@ -28,31 +28,26 @@ The project focuses on practical backend fundamentals: password hashing, server-
 
 > **Project status:** Personal learning project. Run it locally and configure your own database and credentials before use. It is not presented as a production-audited service.
 
-## Interface previews
+## Application screenshots
 
-These are **illustrative UI previews**, not screenshots captured from a running instance. Replace them with real application screenshots when preparing a portfolio or release.
+The following screenshots show the application's actual interface.
 
 <table>
   <tr>
-    <td width="50%" align="center">
-      <img src="docs/assets/login-preview.svg" alt="Illustrative sign-in interface preview" width="100%" />
-      <br /><strong>Authentication interface</strong>
-      <br /><sub>Sign-in layout concept</sub>
+    <td width="50%" align="center" valign="top">
+      <img src="docs/screenshots/auth.png" alt="Actual React Express User App authentication interface" width="100%" />
+      <br /><strong>Authentication</strong>
+      <br /><sub>Registration and sign-in interface</sub>
     </td>
-    <td width="50%" align="center">
-      <img src="docs/assets/dashboard-preview.svg" alt="Illustrative dashboard and user-management interface preview" width="100%" />
-      <br /><strong>Dashboard and user management</strong>
-      <br /><sub>Administrator dashboard concept</sub>
+    <td width="50%" align="center" valign="top">
+      <img src="docs/screenshots/admin-dashboard.png" alt="Actual administrator dashboard with user management" width="100%" />
+      <br /><strong>Admin dashboard</strong>
+      <br /><sub>Dashboard and user-management interface</sub>
     </td>
   </tr>
 </table>
 
-### Add real screenshots
-
-1. Run the app locally and sign in with a test account.
-2. Capture the login/registration screen and the dashboard with the Windows screenshot shortcut: **Win + Shift + S**.
-3. Save the images as `docs/screenshots/auth.png` and `docs/screenshots/admin-dashboard.png`.
-4. Replace the illustrative previews above with those files. Use dummy accounts and never include real passwords, private email addresses, session cookies, or secret values in screenshots.
+> **Screenshot safety:** Use test accounts when capturing or sharing screenshots. Never include passwords, session cookies, private user information, or secret configuration values.
 
 ## Features
 
@@ -115,7 +110,8 @@ react-express-user-app/
 │   │   └── server.js
 │   └── .env                 # Create locally; never commit
 ├── docs/
-│   └── assets/              # README banner and illustrative previews
+│   ├── assets/              # README banner assets
+│   └── screenshots/         # Actual authentication and admin screenshots
 └── .gitignore
 ```
 
@@ -279,7 +275,7 @@ Mutating requests require the CSRF token expected by the server. The frontend AP
 
 - [ ] Add a personal profile page and profile-update API for regular users.
 - [ ] Add automated backend tests for authentication, authorization, CSRF, and user-management edge cases.
-- [ ] Capture real application screenshots and replace the illustrative previews.
+- [x] Capture real application screenshots and include them in the README.
 - [ ] Document the controlled administrator-creation workflow.
 - [ ] Add deployment instructions after choosing a hosting environment.
 
